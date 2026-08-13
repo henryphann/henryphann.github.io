@@ -4,265 +4,228 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Henry Phan | Computer Engineering</title>
+    <title>Henry Phan | Portfolio</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- Navigation -->
-    <nav>
-        <h2>Henry Phan</h2>
+    <!-- App Wrapper for Sidebar Layout -->
+    <div class="app-container">
 
-        <!-- The Blue Hamburger Button -->
-        <div class="hamburger" id="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
-
-        <div class="nav-links" id="nav-links">
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#experience">Experience</a>
-            <a href="#contact">Contact</a>
-        </div>
-    </nav>
-
-
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-
-        <div>
-            <p class="intro">Hello, I'm</p>
-
-            <h1>Henry Phan</h1>
-
-            <h2>Computer Engineering Student</h2>
-
-            <p class="hero-description">
-                I'm a Computer Engineering student interested in software, embedded systems, 
-                and digital hardware. I enjoy turning ideas into working systems and am currently 
-                seeking a 12-month engineering co-op starting in Fall 2026.
-            </p>
-
-            <div class="hero-buttons">
-                <a href="#projects" class="button">View My Projects</a>
-                <a href="resume.pdf" target="_blank" class="button secondary">Download Resume</a>
-            </div>
-        </div>
-
-    </section>
-
-
-    <!-- About -->
-    <section id="about">
-
-        <h2>About Me</h2>
-
-        <p>
-            I'm a Computer Engineering student at Toronto Metropolitan University
-            with an interest in software development, embedded systems,
-            digital hardware, and computer architecture.
-        </p>
-
-        <p>
-            I enjoy building projects that combine programming with hardware,
-            from designing CPUs on FPGAs to developing embedded robots and
-            Python applications.
-        </p>
-
-    </section>
-
-
-    <!-- Skills -->
-    <section id="skills">
-
-        <h2>Technical Skills</h2>
-
-        <div class="skills-container">
-
-            <div class="skill-card">
-                <h3>Languages</h3>
-                <p>C, C++, Java, Python, MATLAB, VHDL, HCS12 Assembly, SQL</p>
+        <!-- Left Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <span class="badge">PORTFOLIO</span>
+                <h2>Henry Phan</h2>
             </div>
 
-            <div class="skill-card">
-                <h3>Hardware</h3>
-                <p>Altera FPGA, Arduino Uno, HCS12, Breadboards, Oscilloscopes</p>
-            </div>
-
-            <div class="skill-card">
-                <h3>Software & Tools</h3>
-                <p>Linux, Power BI, Microsoft Office, Quartus II</p>
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- Projects -->
-    <section id="projects">
-
-        <h2>Projects</h2>
-
-        <div class="projects-container">
-
-            <!-- Project 1 -->
-            <div class="project-card">
-                <h3>Global Temperatures Data Analysis</h3>
-
-                <p>
-                    Engineered a C program to parse a CSV dataset containing over 3,000 global temperature records. 
-                    Developed functions to calculate yearly averages and utilized GNUplot to visually map historical 
-                    temperature trends across different years.
-                </p>
-
-                <div class="technologies">
-                    <span>C</span>
-                    <span>CSV</span>
-                    <span>GNUplot</span>
-                </div>
-            </div>
-
-            <!-- Project 2 -->
-            <div class="project-card">
-                <h3>CPU Design</h3>
-
-                <p>
-                    Designed, implemented, and tested a VHDL-based CPU on an Altera FPGA capable of executing 
-                    standard arithmetic and logic operations, integrating an ALU, D flip-flops, decoders, and encoders.
-                </p>
-
-                <div class="technologies">
-                    <span>VHDL</span>
-                    <span>FPGA</span>
-                    <span>Quartus II</span>
-                </div>
-            </div>
-
-            <!-- Project 3 -->
-            <div class="project-card">
-                <h3>Embedded Navigation Robot</h3>
-
-                <p>
-                    Programmed an HCS12 microcontroller entirely in Assembly to autonomously navigate a maze. 
-                    Utilized a strong understanding of microcontroller mechanics to process inputs from photodetectors, 
-                    focusing strictly on software logic and assembly code execution rather than physical component wiring.
-                </p>
-
-                <div class="technologies">
-                    <span>Assembly</span>
-                    <span>HCS12</span>
-                    <span>Photodetectors</span>
-                </div>
-            </div>
-
-            <!-- Project 4 -->
-            <div class="project-card">
-                <h3>Reminder Bot</h3>
-
-                <p>
-                    Created a Python Discord bot using discord.py and SQLite that allows users to create reminders 
-                    and receive automated notifications. Implemented Generative AI assistance to enhance command processing.
-                </p>
-
-                <div class="technologies">
-                    <span>Python</span>
-                    <span>Discord.py</span>
-                    <span>SQLite</span>
-                    <span>Generative AI</span>
-                </div>
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- Experience -->
-    <section id="experience">
-
-        <h2>Experience</h2>
-
-        <div class="experience-card">
-
-            <h3>Head Counter — Sugarhill Desserts</h3>
-
-            <p class="date">April 2022 – September 2023</p>
-
-            <ul>
-                <li>Proposed seasonal promotional ideas to attract customers.</li>
-                <li>Debugged POS system errors and sales reporting functionality.</li>
-                <li>Assisted in training new staff members in a fast-paced environment.</li>
-                <li>Performed inventory stock procedures to maintain inventory levels.</li>
+            <ul class="side-nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
 
-        </div>
+            <div class="sidebar-footer">
+                <p class="connect-label">Connect with me</p>
+                <a href="https://github.com/henryphann" target="_blank" class="sidebar-button">GitHub</a>
+                <a href="https://linkedin.com" target="_blank" class="sidebar-button">LinkedIn</a>
+            </div>
+        </aside>
 
-    </section>
+        <!-- Main Scrolling Content Area -->
+        <main class="main-content">
 
+            <!-- Hero Section -->
+            <section id="home" class="hero">
+                <div>
+                    <p class="intro">Hello, I'm</p>
 
-    <!-- Education -->
-    <section id="education">
+                    <h1>Henry Phan</h1>
 
-        <h2>Education</h2>
+                    <h2>Computer Engineering Student</h2>
 
-        <div class="education-card">
+                    <p class="hero-description">
+                        I'm a Computer Engineering student interested in software, embedded systems, 
+                        and digital hardware. I enjoy turning ideas into working systems and am currently 
+                        seeking a 12-month engineering co-op starting in Fall 2026.
+                    </p>
 
-            <h3>Toronto Metropolitan University</h3>
-
-            <p>
-                Bachelor of Engineering — Computer Engineering
-            </p>
-
-            <p>
-                Expected 2028
-            </p>
-
-        </div>
-
-    </section>
-
-
-    <!-- Contact -->
-    <section id="contact">
-
-        <h2>Let's Connect</h2>
-
-        <p>
-            I'm always interested in connecting with other students,
-            engineers, and developers.
-        </p>
-
-        <div class="contact-links">
-            <a href="resume.pdf" target="_blank">
-                Resume
-            </a>
-
-            <a href="mailto:henry.phan@torontomu.ca">
-                Email
-            </a>
-
-            <a href="#">
-                GitHub
-            </a>
-
-            <a href="#">
-                LinkedIn
-            </a>
-        </div>
-
-    </section>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="button">View My Projects</a>
+                        <a href="resume.pdf" target="_blank" class="button secondary">Download Resume</a>
+                    </div>
+                </div>
+            </section>
 
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2026 Henry Phan</p>
-    </footer>
+            <!-- About -->
+            <section id="about">
+                <h2>About Me</h2>
+
+                <p>
+                    I'm a Computer Engineering student at Toronto Metropolitan University
+                    with an interest in software development, embedded systems,
+                    digital hardware, and computer architecture.
+                </p>
+
+                <p>
+                    I enjoy building projects that combine programming with hardware,
+                    from designing CPUs on FPGAs to developing embedded robots and
+                    Python applications.
+                </p>
+            </section>
+
+
+            <!-- Skills -->
+            <section id="skills">
+                <h2>Technical Skills</h2>
+
+                <div class="skills-container">
+                    <div class="skill-card">
+                        <h3>Languages</h3>
+                        <p>C, C++, Java, Python, MATLAB, VHDL, HCS12 Assembly, SQL</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <h3>Hardware</h3>
+                        <p>Altera FPGA, Arduino Uno, HCS12, Breadboards, Oscilloscopes</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <h3>Software & Tools</h3>
+                        <p>Linux, Power BI, Microsoft Office, Quartus II</p>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- Projects -->
+            <section id="projects">
+                <h2>Projects</h2>
+
+                <div class="projects-container">
+
+                    <!-- Project 1 -->
+                    <div class="project-card">
+                        <h3>Global Temperatures Data Analysis</h3>
+                        <p>
+                            Engineered a C program to parse a CSV dataset containing over 3,000 global temperature records. 
+                            Developed functions to calculate yearly averages and utilized GNUplot to visually map historical 
+                            temperature trends across different years.
+                        </p>
+                        <div class="technologies">
+                            <span>C</span>
+                            <span>CSV</span>
+                            <span>GNUplot</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card">
+                        <h3>CPU Design</h3>
+                        <p>
+                            Designed, implemented, and tested a VHDL-based CPU on an Altera FPGA capable of executing 
+                            standard arithmetic and logic operations, integrating an ALU, D flip-flops, decoders, and encoders.
+                        </p>
+                        <div class="technologies">
+                            <span>VHDL</span>
+                            <span>FPGA</span>
+                            <span>Quartus II</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card">
+                        <h3>Embedded Navigation Robot</h3>
+                        <p>
+                            Programmed an HCS12 microcontroller entirely in Assembly to autonomously navigate a maze. 
+                            Utilized a strong understanding of microcontroller mechanics to process inputs from photodetectors, 
+                            focusing strictly on software logic and assembly code execution rather than physical component wiring.
+                        </p>
+                        <div class="technologies">
+                            <span>Assembly</span>
+                            <span>HCS12</span>
+                            <span>Photodetectors</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="project-card">
+                        <h3>Reminder Bot</h3>
+                        <p>
+                            Created a Python Discord bot using discord.py and SQLite that allows users to create reminders 
+                            and receive automated notifications. Implemented Generative AI assistance to enhance command processing.
+                        </p>
+                        <div class="technologies">
+                            <span>Python</span>
+                            <span>Discord.py</span>
+                            <span>SQLite</span>
+                            <span>Generative AI</span>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+
+            <!-- Experience -->
+            <section id="experience">
+                <h2>Experience</h2>
+
+                <div class="experience-card">
+                    <h3>Head Counter — Sugarhill Desserts</h3>
+                    <p class="date">April 2022 – September 2023</p>
+                    <ul>
+                        <li>Proposed seasonal promotional ideas to attract customers.</li>
+                        <li>Debugged POS system errors and sales reporting functionality.</li>
+                        <li>Assisted in training new staff members in a fast-paced environment.</li>
+                        <li>Performed inventory stock procedures to maintain inventory levels.</li>
+                    </ul>
+                </div>
+            </section>
+
+
+            <!-- Education -->
+            <section id="education">
+                <h2>Education</h2>
+
+                <div class="education-card">
+                    <h3>Toronto Metropolitan University</h3>
+                    <p>Bachelor of Engineering — Computer Engineering</p>
+                    <p>Expected 2028</p>
+                </div>
+            </section>
+
+
+            <!-- Contact -->
+            <section id="contact">
+                <h2>Let's Connect</h2>
+                <p>
+                    I'm always interested in connecting with other students,
+                    engineers, and developers.
+                </p>
+
+                <div class="contact-links">
+                    <a href="resume.pdf" target="_blank">Resume</a>
+                    <a href="mailto:henry.phan@torontomu.ca">Email</a>
+                    <a href="https://github.com/henryphann" target="_blank">GitHub</a>
+                    <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+                </div>
+            </section>
+
+
+            <!-- Footer -->
+            <footer>
+                <p>© 2026 Henry Phan</p>
+            </footer>
+
+        </main>
+    </div>
 
     <script src="script.js"></script>
 
