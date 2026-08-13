@@ -389,6 +389,39 @@ footer {
     color: #64748b;
 }
 
+/* Project Pill Button Addon */
+.project-link-btn {
+    margin-top: 20px;
+}
+
+.project-link-btn a {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: transparent;
+    color: #f8fafc;
+    border: 1px solid #334155;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.project-link-btn a svg {
+    transition: transform 0.3s ease;
+}
+
+.project-link-btn a:hover {
+    background-color: #1e293b;
+    border-color: #475569;
+}
+
+.project-link-btn a:hover svg {
+    transform: translate(2px, -2px);
+}
+
 /* =========================
    Mobile Layout
 ========================= */
