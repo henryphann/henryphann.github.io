@@ -347,8 +347,10 @@ section > h2 {
 
 .course-list {
     list-style-type: none;
-    column-count: 2;
-    column-gap: 30px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: repeat(4, auto);
+    gap: 8px 40px;
 }
 
 .course-list li {
@@ -374,6 +376,7 @@ section > h2 {
         column-count: 1;
     }
 }
+
 /* =========================
    Contact
 ========================= */
