@@ -423,6 +423,22 @@ footer {
 }
 
 /* =========================
+   Sidebar icons Layout
+========================= */
+
+.side-nav-links li a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.side-nav-links li a svg {
+    width: 18px;
+    height: 18px;
+    stroke-width: 2;
+}
+
+/* =========================
    Mobile Layout
 ========================= */
 
