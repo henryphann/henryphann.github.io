@@ -347,12 +347,33 @@ section > h2 {
 
 .course-list {
     list-style-type: none;
-    display: grid;
-    grid-auto-flow: column;
-    grid-template-rows: repeat(4, auto);
-    gap: 8px 30px; /* space between items and columns */
+    column-count: 2;
+    column-gap: 30px;
 }
 
+.course-list li {
+    break-inside: avoid;
+    margin-bottom: 8px;
+    color: #94a3b8;
+    font-size: 0.9rem;
+    font-weight: 300;
+    position: relative;
+    padding-left: 15px;
+}
+
+.course-list li::before {
+    content: "•";
+    color: #38bdf8;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .course-list {
+        column-count: 1;
+    }
+}
 /* =========================
    Contact
 ========================= */
