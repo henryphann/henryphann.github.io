@@ -22,7 +22,6 @@
             <span class="bar"></span>
         </div>
 
-        <!-- Added id="nav-links" here -->
         <div class="nav-links" id="nav-links">
             <a href="#about">About</a>
             <a href="#skills">Skills</a>
@@ -44,14 +43,14 @@
             <h2>Computer Engineering Student</h2>
 
             <p class="hero-description">
-                I'm a Computer Engineering student interested in software,
-                embedded systems, digital hardware, and computer architecture.
-                I enjoy turning ideas into working systems.
+                I'm a Computer Engineering student interested in software, embedded systems, 
+                and digital hardware. I enjoy turning ideas into working systems and am currently 
+                seeking a 12-month engineering co-op starting in Fall 2026.
             </p>
 
             <div class="hero-buttons">
                 <a href="#projects" class="button">View My Projects</a>
-                <a href="#contact" class="button secondary">Contact Me</a>
+                <a href="resume.pdf" target="_blank" class="button secondary">Download Resume</a>
             </div>
         </div>
 
@@ -114,41 +113,28 @@
 
             <!-- Project 1 -->
             <div class="project-card">
+                <h3>Global Temperatures Data Analysis</h3>
 
-                    <div class="project-image">
-                        <span>Python Project</span>
-                    </div>
+                <p>
+                    Engineered a C program to parse a CSV dataset containing over 3,000 global temperature records. 
+                    Developed functions to calculate yearly averages and utilized GNUplot to visually map historical 
+                    temperature trends across different years.
+                </p>
 
-                    <div class="project-content">
-
-                    <h3>Global Temperatures Data Analysis</h3>
-
-                    <p>
-                        Analyzed over 3,000 global temperature records using Python.
-                        The program processes CSV data, calculates yearly temperature
-                        averages, and generates visualizations to identify temperature trends.
-                    </p>
-
-                    <div class="technologies">
-                        <span>Python</span>
-                        <span>CSV</span>
-                        <span>Gnuplot</span>
-                    </div>
-
-                        <a href="#" class="project-link">View Project →</a>
-
-                    </div>
+                <div class="technologies">
+                    <span>C</span>
+                    <span>CSV</span>
+                    <span>GNUplot</span>
+                </div>
             </div>
-
 
             <!-- Project 2 -->
             <div class="project-card">
-
                 <h3>CPU Design</h3>
 
                 <p>
-                    Designed and implemented a VHDL-based CPU on an Altera FPGA,
-                    integrating an ALU, D flip-flops, decoders, encoders, and 7-segment displays.
+                    Designed, implemented, and tested a VHDL-based CPU on an Altera FPGA capable of executing 
+                    standard arithmetic and logic operations, integrating an ALU, D flip-flops, decoders, and encoders.
                 </p>
 
                 <div class="technologies">
@@ -156,45 +142,40 @@
                     <span>FPGA</span>
                     <span>Quartus II</span>
                 </div>
-
             </div>
-
 
             <!-- Project 3 -->
             <div class="project-card">
-
                 <h3>Embedded Navigation Robot</h3>
 
                 <p>
-                    Developed an autonomous navigation robot using an HCS12 microcontroller,
-                    implementing sensor processing, motor control, and navigation logic.
+                    Programmed an HCS12 microcontroller entirely in Assembly to autonomously navigate a maze. 
+                    Utilized a strong understanding of microcontroller mechanics to process inputs from photodetectors, 
+                    focusing strictly on software logic and assembly code execution rather than physical component wiring.
                 </p>
 
                 <div class="technologies">
                     <span>Assembly</span>
                     <span>HCS12</span>
-                    <span>Embedded Systems</span>
+                    <span>Photodetectors</span>
                 </div>
-
             </div>
-
 
             <!-- Project 4 -->
             <div class="project-card">
-
                 <h3>Reminder Bot</h3>
 
                 <p>
-                    Created a Python Discord bot using Discord.py and SQLite that
-                    allows users to create reminders and receive automated notifications.
+                    Created a Python Discord bot using discord.py and SQLite that allows users to create reminders 
+                    and receive automated notifications. Implemented Generative AI assistance to enhance command processing.
                 </p>
 
                 <div class="technologies">
                     <span>Python</span>
                     <span>Discord.py</span>
                     <span>SQLite</span>
+                    <span>Generative AI</span>
                 </div>
-
             </div>
 
         </div>
@@ -258,6 +239,10 @@
         </p>
 
         <div class="contact-links">
+            <a href="resume.pdf" target="_blank">
+                Resume
+            </a>
+
             <a href="mailto:henry.phan@torontomu.ca">
                 Email
             </a>
@@ -278,7 +263,6 @@
     <footer>
         <p>© 2026 Henry Phan</p>
     </footer>
-
 
     <script src="script.js"></script>
 
