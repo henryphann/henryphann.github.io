@@ -345,6 +345,14 @@ section > h2 {
     color: #cbd5e1;
 }
 
+.course-list {
+    list-style-type: none;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: repeat(4, auto);
+    gap: 8px 30px; /* space between items and columns */
+}
+
 /* =========================
    Contact
 ========================= */
