@@ -133,6 +133,13 @@ body {
     background-color: #0f172a;
 }
 
+.email {
+    margin-top: 15px;
+    font-size: 0.8rem;
+    color: #888;
+    text-align: left;
+}
+
 /* =========================
    Sections
 ========================= */
